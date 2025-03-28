@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Asp.net\\PhamThuyhang_2122110351\\PhamThuyhang_2122110351.csproj": {}
+    "D:\\Asp.net\\phamthuyhang\\PhamThuyhang_2122110351\\PhamThuyhang_2122110351.csproj": {}
   },
   "projects": {
-    "D:\\Asp.net\\PhamThuyhang_2122110351\\PhamThuyhang_2122110351.csproj": {
+    "D:\\Asp.net\\phamthuyhang\\PhamThuyhang_2122110351\\PhamThuyhang_2122110351.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Asp.net\\PhamThuyhang_2122110351\\PhamThuyhang_2122110351.csproj",
+        "projectUniqueName": "D:\\Asp.net\\phamthuyhang\\PhamThuyhang_2122110351\\PhamThuyhang_2122110351.csproj",
         "projectName": "PhamThuyhang_2122110351",
-        "projectPath": "D:\\Asp.net\\PhamThuyhang_2122110351\\PhamThuyhang_2122110351.csproj",
+        "projectPath": "D:\\Asp.net\\phamthuyhang\\PhamThuyhang_2122110351\\PhamThuyhang_2122110351.csproj",
         "packagesPath": "C:\\Users\\hangp\\.nuget\\packages\\",
-        "outputPath": "D:\\Asp.net\\PhamThuyhang_2122110351\\obj\\",
+        "outputPath": "D:\\Asp.net\\phamthuyhang\\PhamThuyhang_2122110351\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,22 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
