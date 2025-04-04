@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PhamThuyhang_2122110351.Data;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Thêm DbContext với chuỗi kết nối
@@ -11,6 +10,12 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Configure Kestrel to use a different port
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.ListenLocalhost(5001); // Change to a different port
+});
 
 var app = builder.Build();
 
