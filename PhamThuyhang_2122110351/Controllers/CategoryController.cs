@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PhamThuyhang_2122110351;
-using PhamThuyhang_2122110351.Model;
 using PhamThuyhang_2122110351.Data;
+using PhamThuyhang_2122110351.Model;
 
 namespace PhamThuyhang_2122110351.Controllers
 {
+   
     [Route("api/[controller]")]
     [ApiController]
     public class CategoryController : ControllerBase
@@ -18,13 +19,14 @@ namespace PhamThuyhang_2122110351.Controllers
         }
 
         // GET: api/Category
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
         {
             return await _context.Categories.ToListAsync();
         }
 
-        // GET api/Category/5
+        // GET: api/Category/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Category>> GetCategory(int id)
         {
@@ -38,7 +40,7 @@ namespace PhamThuyhang_2122110351.Controllers
             return category;
         }
 
-        // POST api/Category
+        // POST: api/Category
         [HttpPost]
         public async Task<ActionResult<Category>> PostCategory([FromBody] Category category)
         {
@@ -48,7 +50,7 @@ namespace PhamThuyhang_2122110351.Controllers
             return CreatedAtAction(nameof(GetCategory), new { id = category.Id }, category);
         }
 
-        // PUT api/Category/5
+        // PUT: api/Category/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCategory(int id, [FromBody] Category category)
         {
@@ -78,7 +80,7 @@ namespace PhamThuyhang_2122110351.Controllers
             return NoContent();
         }
 
-        // DELETE api/Category/5
+        // DELETE: api/Category/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {

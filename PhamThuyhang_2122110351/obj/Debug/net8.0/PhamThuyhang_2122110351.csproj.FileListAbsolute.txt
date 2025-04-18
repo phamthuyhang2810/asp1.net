@@ -206,3 +206,8 @@ D:\Asp.net\phamthuyhang\PhamThuyhang_2122110351\obj\Debug\net8.0\refint\PhamThuy
 D:\Asp.net\phamthuyhang\PhamThuyhang_2122110351\obj\Debug\net8.0\PhamThuyhang_2122110351.pdb
 D:\Asp.net\phamthuyhang\PhamThuyhang_2122110351\obj\Debug\net8.0\PhamThuyhang_2122110351.genruntimeconfig.cache
 D:\Asp.net\phamthuyhang\PhamThuyhang_2122110351\obj\Debug\net8.0\ref\PhamThuyhang_2122110351.dll
+D:\Asp.net\phamthuyhang\PhamThuyhang_2122110351\bin\Debug\net8.0\PhamThuyhang_2122110351.staticwebassets.runtime.json
+D:\Asp.net\phamthuyhang\PhamThuyhang_2122110351\bin\Debug\net8.0\package-lock.json
+D:\Asp.net\phamthuyhang\PhamThuyhang_2122110351\bin\Debug\net8.0\package.json
+D:\Asp.net\phamthuyhang\PhamThuyhang_2122110351\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Asp.net\phamthuyhang\PhamThuyhang_2122110351\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
