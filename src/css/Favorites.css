@@ -1,0 +1,39 @@
+.favorites-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.favorites-table th,
+.favorites-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.favorites-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.favorites-table img {
+  max-width: 100px; /* Đảm bảo chiều rộng tối đa là 100px */
+  max-height: 100px; /* Đảm bảo chiều cao tối đa là 100px */
+  width: auto; /* Tự động điều chỉnh chiều rộng nếu cần */
+  height: auto; /* Tự động điều chỉnh chiều cao nếu cần */
+  object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+  border-radius: 4px; /* Bo góc nhẹ */
+}
+
+.remove-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.remove-btn:hover {
+  background-color: #e53935;
+}

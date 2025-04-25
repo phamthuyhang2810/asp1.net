@@ -1,0 +1,39 @@
+.banner-container {
+  margin: 0; /* Loại bỏ margin */
+  padding: 0; /* Loại bỏ padding */
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-carousel {
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+.banner-slide {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.banner-image {
+  width: 100%;
+  height: 300px; /* Chiều cao banner */
+  object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+  display: block;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
